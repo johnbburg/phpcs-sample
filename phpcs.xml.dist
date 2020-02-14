@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<ruleset>
+  <description>PHPCS overrides for F1 Drupal Sites.</description>
+
+  <!-- Set ignore extensions. -->
+  <!-- @see https://www.drupal.org/node/2867601#comment-12075633 -->
+  <arg name="ignore" value="*.scss,*.css,*.md,*.txt,*.png,*.jpg,*.jpeg,*.json,*.js,*.lock"/>
+
+  <!-- Use colors in output. -->
+  <arg name="colors"/>
+
+  <!-- Show progress. -->
+  <arg value="p"/>
+
+  <!-- Include existing standards. -->
+  <!-- <rule ref="Drupal"/> -->
+  <!-- <rule ref="DrupalPractice"/> -->
+  <rule ref="PHPCompatibility"/>
+
+  <!-- Ignore `<?php declare(strict_types = 1)` -->
+  <!-- <rule ref="Drupal">
+    <exclude name="Drupal.WhiteSpace.OpenTagNewline.BlankLine" />
+  </rule> -->
+
+</ruleset>
+
